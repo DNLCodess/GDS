@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+
+  /* Brand — GDS Wine/Magenta palette */
+  --color-brand: #8b1a4a;
+  --color-brand-dark: #5e0f30;
+  --color-brand-mid: #b8306a;
+  --color-brand-light: #e8c0d0;
+  --color-brand-gold: #c9973a;
+  --color-brand-gold-light: #e8c97a;
+
+  /* Radii */
+  --radius-3xl: 1.5rem;
+  --radius-4xl: 2rem;
+}
+
+:root {
+  /* Brand — GDS Wine/Magenta (matched to flier assets) */
+  --brand: #8b1a4a;
+  --brand-dark: #5e0f30;
+  --brand-mid: #b8306a;
+  --brand-light: #e8c0d0;
+  --brand-gold: #c9973a;
+  --brand-gold-light: #e8c97a;
+
+  /* Neutrals — warm-tinted to complement the wine brand */
+  --bg-base: #fdfcfb;
+  --bg-card: #ffffff;
+  --bg-subtle: #faf7f5;
+  --text-primary: #1a0a0f;
+  --text-secondary: #4b2535;
+  --text-muted: #8b6070;
+  --border: #ede0e6;
+  --border-strong: #d4b0c0;
+
+  /* Gradients — used sparingly */
+  --gradient-brand: linear-gradient(135deg, #5e0f30 0%, #8b1a4a 100%);
+  --gradient-hero: linear-gradient(
+    160deg,
+    #1a0a0f 0%,
+    #5e0f30 50%,
+    #8b1a4a 100%
+  );
+  --gradient-gold: linear-gradient(135deg, #c9973a 0%, #e8c97a 100%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--brand-light);
+  color: #1a0a0f;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-subtle);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brand-mid);
+  border-radius: 3px;
+}
+
+/* ── Layout ── */
+.container-page {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-page {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-page {
+    padding-inline: 2rem;
+  }
+}
+
+/* ── Utilities ── */
+
+.text-gradient {
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-gold {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtle dot pattern */
+.dot-pattern {
+  background-image: radial-gradient(
+    circle,
+    rgba(139, 26, 74, 0.08) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+}
+
+/* Card interactions */
+.card-hover {
+  transition:
+    transform 150ms ease-out,
+    box-shadow 150ms ease-out;
+}
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 48px rgba(139, 26, 74, 0.12);
+}
+
+/* Primary button */
+.btn-primary {
+  background: var(--gradient-brand);
+  color: white;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition:
+    opacity 150ms ease-out,
+    transform 150ms ease-out,
+    box-shadow 150ms ease-out;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 32px rgba(139, 26, 74, 0.38);
+}
+.btn-primary:active {
+  transform: translateY(0);
+  opacity: 0.85;
+}
+
+/* Gold accent button */
+.btn-gold {
+  background: var(--gradient-gold);
+  color: #1a0a0f;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition:
+    opacity 150ms ease-out,
+    transform 150ms ease-out,
+    box-shadow 150ms ease-out;
+}
+.btn-gold:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 32px rgba(201, 151, 58, 0.38);
+}
+
+/* Ghost button */
+.btn-ghost {
+  border: 1.5px solid var(--border-strong);
+  color: var(--text-primary);
+  background: transparent;
+  transition:
+    border-color 150ms ease-out,
+    background 150ms ease-out;
+}
+.btn-ghost:hover {
+  border-color: var(--brand);
+  background: rgba(139, 26, 74, 0.04);
+}
+
+/* Section label */
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+/* Brand tinted left border for feature lists */
+.feature-row {
+  border-left: 2px solid var(--brand-light);
+  padding-left: 1rem;
+}
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
