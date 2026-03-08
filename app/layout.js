@@ -105,7 +105,7 @@ export default function RootLayout({ children }) {
               email: "enquiries@gloryeduserve.com",
               description:
                 "Study abroad consulting and career guidance for Nigerian students, with 28 years of experience.",
-              foundingDate: "1997",
+              foundingDate: "1998",
               areaServed: "Nigeria",
               serviceType: "Study Abroad Consulting",
             }),

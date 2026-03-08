@@ -115,8 +115,8 @@ export default function ProblemStatement() {
             >
               You wonder why? The reason is not far-fetched. The majority
               don&rsquo;t pay attention to the decisions they make at home,
-              ahead of travelling. With 28 years of experience, we&rsquo;ve seen
-              this pattern — and we know exactly how to break it.
+              ahead of travelling. With experience, we&rsquo;ve seen this
+              pattern — and we know exactly how to break it.
             </motion.p>
           </motion.div>
 

@@ -19,6 +19,8 @@ const STATS = [
 
 const TOPICS = [
   "Nursing",
+  "Science",
+  "Education",
   "IT & Data Science",
   "Engineering",
   "Business & Management",
@@ -77,7 +79,7 @@ export default function Hero() {
               className="section-label"
               style={{ color: "var(--text-muted)", letterSpacing: "0.12em" }}
             >
-              Est. 1997
+              Est. 1998
             </span>
             <span
               style={{
@@ -266,7 +268,7 @@ export default function Hero() {
                     color: "rgba(255,255,255,0.65)",
                   }}
                 >
-                  Est. 1997
+                  Est. 1998
                 </span>
               </div>
             </motion.div>
@@ -307,7 +309,7 @@ export default function Hero() {
                   className="section-label"
                   style={{ marginBottom: "0.625rem" }}
                 >
-                  We cover pathways in
+                  We cover courses in
                 </p>
                 <div
                   style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem" }}

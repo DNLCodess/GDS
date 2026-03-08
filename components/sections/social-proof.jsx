@@ -14,7 +14,7 @@ const STATS = [
   {
     value: "28",
     unit: "Years",
-    label: "Trusted by Nigerian students since 1997",
+    label: "Trusted by Nigerian students since 1998",
     large: true,
   },
   {
@@ -40,7 +40,7 @@ const STATS = [
 const TRUST_POINTS = [
   {
     heading: "Almost three decades of experience",
-    body: "Founded in 1997, Glory Educational Services has watched the overseas education landscape shift — and adapted our guidance accordingly. We don't guess; we know.",
+    body: "Founded in 1998, Glory Educational Services has watched the overseas education landscape shift — and adapted our guidance accordingly. We don't guess; we know.",
   },
   {
     heading: "Career outcomes, not just admissions",
@@ -384,7 +384,7 @@ export default function SocialProof() {
                       letterSpacing: "-0.02em",
                     }}
                   >
-                    1997
+                    1998
                   </span>
                   <span
                     style={{

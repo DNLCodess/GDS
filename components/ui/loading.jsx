@@ -156,7 +156,7 @@ export default function LoadingScreen() {
                 color: "var(--text-muted)",
               }}
             >
-              Est. 1997 &nbsp;·&nbsp; Career-First Guidance
+              Est. 1998 &nbsp;·&nbsp; Career-First Guidance
             </motion.span>
           </motion.div>
         </motion.div>

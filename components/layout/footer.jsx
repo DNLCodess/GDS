@@ -105,7 +105,7 @@ export default function Footer() {
               }}
             >
               Career-first study abroad consulting for Nigerians. Trusted since
-              1997.
+              1998.
             </p>
 
             {/* Contact details */}
@@ -374,7 +374,7 @@ export default function Footer() {
               color: "rgba(255,255,255,0.2)",
             }}
           >
-            Registered in Nigeria · Est. 1997
+            Registered in Nigeria · Est. 1998
           </p>
         </div>
       </div>
