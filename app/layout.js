@@ -23,7 +23,7 @@ const dmSans = DM_Sans({
 export const metadata = {
   metadataBase: new URL("https://gloryeduserve.com"),
   title: {
-    default: "Glory Educational Services — Study Abroad with Purpose",
+    default: "Contact Us, Click Here",
     template: "%s | Glory Educational Services",
   },
   description:
